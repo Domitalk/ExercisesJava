@@ -17,11 +17,14 @@ public class BarkingDog {
     }
 
     public static boolean shouldWakeUp(boolean barking, int hourOfDay) {
+        boolean conditionToReturn = false;
+        if ((barking == true && (hourOfDay >= 0 && hourOfDay < 8)) || (barking == true) && (hourOfDay <= 23 && hourOfDay > 22)) {
+            conditionToReturn = true;
+        }
+        return conditionToReturn;
         // hour of day should be between 0-23
         // if dog is barking && hour is before 8 || after 22 return true
         // else return false
         // if hour of day is less than 0 || greater than 23 return false
-
-        return true;
     }
 }
