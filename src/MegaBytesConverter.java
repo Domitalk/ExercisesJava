@@ -29,7 +29,13 @@ public class MegaBytesConverter {
 //        For example, when the parameter kiloBytes is 2500 it needs to print "2500 KB = 2 MB and 452 KB"
 //        If the parameter kiloBytes is less than 0 then print the text "Invalid Value".
 
-
+        if (kiloBytes < 0) {
+            System.out.println("Invalid Value");
+        } else {
+            int remainderKB = kiloBytes % 1024;
+            int megaBytes = kiloBytes / 1024;
+            System.out.println(kiloBytes + " KB = " + megaBytes + " MB and " + remainderKB + " KB");
+        }
 
     }
 }

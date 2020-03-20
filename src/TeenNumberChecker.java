@@ -15,9 +15,11 @@ public class TeenNumberChecker {
     public static boolean hasTeen(int firstArg, int secondArg, int thirdArg) {
         // should return true if one of the params is within the range of 13 - 19 inclusively
         // else return false
+        return true;
     }
 
     public static boolean isTeen(int firstArg) {
         // same as above just with one arg... maybe piggyback off the other one
+        return true;
     }
 }

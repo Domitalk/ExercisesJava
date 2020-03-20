@@ -34,5 +34,6 @@ public class isLeapYear {
 //        1600, 2000, 2400
 //        This is because they are evenly divisible by both 100 and 400.
 
+        return true;
     }
 }

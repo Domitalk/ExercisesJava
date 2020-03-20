@@ -22,5 +22,6 @@ public class BarkingDog {
         // else return false
         // if hour of day is less than 0 || greater than 23 return false
 
+        return true;
     }
 }

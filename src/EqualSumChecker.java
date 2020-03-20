@@ -12,5 +12,6 @@ public class EqualSumChecker {
         // return true if sum of the first and second params are equal to the third,
         // else return false
 
+        return true;
     }
 }

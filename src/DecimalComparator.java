@@ -16,6 +16,6 @@ public class DecimalComparator {
 //        TIP: Use paper and pencil.
 //        TIP: Use casting.
 
-
+        return true;
     }
 }
