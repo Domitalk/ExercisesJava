@@ -10,16 +10,17 @@ public class TeenNumberChecker {
         System.out.println(isTeen(9));
         System.out.println("Test 5 should return true");
         System.out.println(isTeen(13));
-
     }
+
+
     public static boolean hasTeen(int firstArg, int secondArg, int thirdArg) {
         // should return true if one of the params is within the range of 13 - 19 inclusively
         // else return false
-        return true;
+        return (isTeen(firstArg) || isTeen(secondArg) || isTeen(thirdArg));
     }
 
     public static boolean isTeen(int firstArg) {
         // same as above just with one arg... maybe piggyback off the other one
-        return true;
+        return (firstArg >= 13 && firstArg <= 19);
     }
 }

@@ -11,7 +11,6 @@ public class EqualSumChecker {
     public static boolean hasEqualSum(int firstArg, int secondArg, int thirdArg) {
         // return true if sum of the first and second params are equal to the third,
         // else return false
-
-        return true;
+        return firstArg + secondArg == thirdArg;
     }
 }
