@@ -7,7 +7,7 @@ public class isLeapYear {
         System.out.println("Test 3 is false");
         System.out.println(isItLeapYear(2017));
         System.out.println("Test 4 is true");
-        System.out.println(2000);
+        System.out.println(isItLeapYear(2000));
 
 
     }
@@ -33,7 +33,12 @@ public class isLeapYear {
 //        The following years are leap years:
 //        1600, 2000, 2400
 //        This is because they are evenly divisible by both 100 and 400.
-
-        return true;
+        boolean returnVal = false;
+        if (year >= 1 && year <= 9999) {
+            if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
+                returnVal = true;
+            }
+        }
+        return returnVal;
     }
 }
