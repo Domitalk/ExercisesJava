@@ -16,6 +16,14 @@ public class DecimalComparator {
 //        TIP: Use paper and pencil.
 //        TIP: Use casting.
 
-        return true;
+        int firstMulti = (int)(firstArg * 1000);
+
+        int secondMulti = (int)(secondArg * 1000);
+
+        if (firstMulti == secondMulti) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
