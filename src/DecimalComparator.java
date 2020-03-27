@@ -20,10 +20,6 @@ public class DecimalComparator {
 
         int secondMulti = (int)(secondArg * 1000);
 
-        if (firstMulti == secondMulti) {
-            return true;
-        } else {
-            return false;
-        }
+        return (firstMulti == secondMulti);
     }
 }
